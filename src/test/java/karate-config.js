@@ -9,11 +9,8 @@ function fn() {
 	baseUrl: '',
   }
   if (env == 'dev') {
-    // customize
-    // e.g. config.foo = 'bar';
     config.baseUrl = 'https://jsonplaceholder.typicode.com'
   } else if (env == 'hom') {
-    // customize
     config.baseUrl = 'https://jsonplaceholder.typicode.com'
   }
 
