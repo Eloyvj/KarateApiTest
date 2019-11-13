@@ -1,7 +1,7 @@
 Feature: Test in put verb for resource /posts
 
   Background:
-    * url 'https://jsonplaceholder.typicode.com'
+    * url baseUrl
 
   Scenario: update a post
     * def postForUpdate =

@@ -1,7 +1,7 @@
 Feature: Test in get verb for resource /posts
 
   Background:
-    * url 'https://jsonplaceholder.typicode.com'
+    * url baseUrl
 
   Scenario: get all posts and check the schema
     Given path 'posts'
