@@ -55,35 +55,42 @@ PUT
 DELETE
 ```
 
-> Run test by specific verb
+> Environments available:
+
+```
+DEV (development)
+HOM (homologation)
+```
+
+> Run test by specific verb and environment
 
 ```shell
 Get:
 
-$ mvn clean -Dtest=ExamplesTestRunner#testGet test
+$ mvn clean -Dtest=ExamplesTestRunner#testGet -DargLine="-Dkarate.env=dev" test
 ```
 
 ```shell
 Post:
 
-$ mvn clean -Dtest=ExamplesTestRunner#testPost test
+$ mvn clean -Dtest=ExamplesTestRunner#testPost -DargLine="-Dkarate.env=dev" test
 ```
 
 ```shell
 Put:
 
-$ mvn clean -Dtest=ExamplesTestRunner#testPut test
+$ mvn clean -Dtest=ExamplesTestRunner#testPut -DargLine="-Dkarate.env=dev" test
 ```
 
 ```shell
 Delete:
 
-$ mvn clean -Dtest=ExamplesTestRunner#testDelete test
+$ mvn clean -Dtest=ExamplesTestRunner#testDelete -DargLine="-Dkarate.env=dev" test
 ```
 
 > Run all tests
 ```shell
-$ mvn clean -Dtest=ExamplesTestRunner#testAll test
+$ mvn clean -Dtest=ExamplesTestRunner#testAll -DargLine="-Dkarate.env=dev" test
 ```
 
 > Open execution report

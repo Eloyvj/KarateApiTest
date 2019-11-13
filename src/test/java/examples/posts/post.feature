@@ -1,7 +1,7 @@
 Feature: Test in verb post for resource /posts
 
   Background:
-    * url 'https://jsonplaceholder.typicode.com'
+    * url baseUrl
 
    Scenario: create a new post
      * def newPost =

@@ -1,7 +1,7 @@
 Feature: Test in delete verb for resource /posts
 
   Background:
-    * url 'https://jsonplaceholder.typicode.com'
+    * url baseUrl
     
   Scenario: delete a post
     Given path '/posts/1'
