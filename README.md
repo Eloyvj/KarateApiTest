@@ -88,6 +88,11 @@ Delete:
 $ mvn clean -Dtest=ExamplesTestRunner#testDelete -DargLine="-Dkarate.env=dev" test
 ```
 
+> Run all tests except scenarios with tag @ignore
+```shell
+$ mvn clean -Dtest=ExamplesTestRunner#testTags -DargLine="-Dkarate.env=dev" test
+```
+
 > Run all tests
 ```shell
 $ mvn clean -Dtest=ExamplesTestRunner#testAll -DargLine="-Dkarate.env=dev" test

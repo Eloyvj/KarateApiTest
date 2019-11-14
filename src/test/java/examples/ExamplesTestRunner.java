@@ -28,7 +28,13 @@ class ExamplesTestRunner {
     Karate testUsers() {
         return new Karate().feature("/users/users").relativeTo(getClass());
     }
-    
+
+    // this will run all *.features files that exists in sub-directories except scenarios with tag @ignore
+    @Karate.Test
+    Karate testTags() {
+        return new Karate().tags("~@ignore").relativeTo(getClass());
+    }
+
     // this will run all *.feature files that exist in sub-directories
     @Karate.Test
     Karate testAll() {
