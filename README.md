@@ -98,6 +98,11 @@ $ mvn clean -Dtest=ExamplesTestRunner#testTags -DargLine="-Dkarate.env=dev" test
 $ mvn clean -Dtest=ExamplesTestRunner#testAll -DargLine="-Dkarate.env=dev" test
 ```
 
+> Run all tests in parallel
+```shell
+$ mvn clean -Dtest=ExampleParallelRunner#testParallel -DargLine="-Dkarate.env=dev" test
+```
+
 > Open execution report
 - See the output in terminal:
 ```
