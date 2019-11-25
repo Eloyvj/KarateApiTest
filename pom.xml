@@ -14,6 +14,7 @@
         <karate.version>0.9.4</karate.version>
         <maven.surefire.version>2.22.0</maven.surefire.version>
         <maven.failsafe.version>2.22.0</maven.failsafe.version>
+        <cucumber.reporting.version>4.11.2</cucumber.reporting.version>
     </properties>    
 
     <dependencies>
@@ -38,6 +39,12 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>${cucumber.reporting.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
